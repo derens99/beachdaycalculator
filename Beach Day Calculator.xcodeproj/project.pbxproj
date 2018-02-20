@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5787A0AB47A0C4EC9AB3331E /* libPods-Beach Day Calculator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 244BAC7165C7AA07578B8B3B /* libPods-Beach Day Calculator.a */; };
+		BDBE5FCB203A965300B4E39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE5FCA203A965300B4E39A /* AppDelegate.swift */; };
+		BDBE5FCD203A965300B4E39A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE5FCC203A965300B4E39A /* ViewController.swift */; };
+		BDBE5FD0203A965300B4E39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDBE5FCE203A965300B4E39A /* Main.storyboard */; };
+		BDBE5FD2203A965300B4E39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDBE5FD1203A965300B4E39A /* Assets.xcassets */; };
+		BDBE5FD5203A965300B4E39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDBE5FD3203A965300B4E39A /* LaunchScreen.storyboard */; };
+		BDBE5FE0203A965400B4E39A /* Beach_Day_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE5FDF203A965400B4E39A /* Beach_Day_CalculatorTests.swift */; };
+		BDBE5FEB203A965400B4E39A /* Beach_Day_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE5FEA203A965400B4E39A /* Beach_Day_CalculatorUITests.swift */; };
+		BDBE5FF9203A99CA00B4E39A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BDBE5FF8203A99CA00B4E39A /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDBE5FDC203A965400B4E39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDBE5FBF203A965300B4E39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDBE5FC6203A965300B4E39A;
+			remoteInfo = "Beach Day Calculator";
+		};
+		BDBE5FE7203A965400B4E39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDBE5FBF203A965300B4E39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDBE5FC6203A965300B4E39A;
+			remoteInfo = "Beach Day Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		244BAC7165C7AA07578B8B3B /* libPods-Beach Day Calculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Beach Day Calculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44E8054FAC74333B29AE5818 /* Pods-Beach Day Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beach Day Calculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beach Day Calculator/Pods-Beach Day Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		8C27C9DF3FC18AEAF4E636F9 /* Pods-Beach Day Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beach Day Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beach Day Calculator/Pods-Beach Day Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		BDBE5FC7203A965300B4E39A /* Beach Day Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beach Day Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDBE5FCA203A965300B4E39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDBE5FCC203A965300B4E39A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDBE5FCF203A965300B4E39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDBE5FD1203A965300B4E39A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDBE5FD4203A965300B4E39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDBE5FD6203A965300B4E39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDBE5FDB203A965400B4E39A /* Beach Day CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beach Day CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDBE5FDF203A965400B4E39A /* Beach_Day_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beach_Day_CalculatorTests.swift; sourceTree = "<group>"; };
+		BDBE5FE1203A965400B4E39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDBE5FE6203A965400B4E39A /* Beach Day CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beach Day CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDBE5FEA203A965400B4E39A /* Beach_Day_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beach_Day_CalculatorUITests.swift; sourceTree = "<group>"; };
+		BDBE5FEC203A965400B4E39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDBE5FF8203A99CA00B4E39A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDBE5FC4203A965300B4E39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5787A0AB47A0C4EC9AB3331E /* libPods-Beach Day Calculator.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBE5FD8203A965400B4E39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBE5FE3203A965400B4E39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		125D9DAB2ABE7E75AD7361F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C27C9DF3FC18AEAF4E636F9 /* Pods-Beach Day Calculator.debug.xcconfig */,
+				44E8054FAC74333B29AE5818 /* Pods-Beach Day Calculator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7095FF54B670D308075A04D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				244BAC7165C7AA07578B8B3B /* libPods-Beach Day Calculator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDBE5FBE203A965300B4E39A = {
+			isa = PBXGroup;
+			children = (
+				BDBE5FF8203A99CA00B4E39A /* Podfile */,
+				BDBE5FC9203A965300B4E39A /* Beach Day Calculator */,
+				BDBE5FDE203A965400B4E39A /* Beach Day CalculatorTests */,
+				BDBE5FE9203A965400B4E39A /* Beach Day CalculatorUITests */,
+				BDBE5FC8203A965300B4E39A /* Products */,
+				125D9DAB2ABE7E75AD7361F4 /* Pods */,
+				7095FF54B670D308075A04D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDBE5FC8203A965300B4E39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDBE5FC7203A965300B4E39A /* Beach Day Calculator.app */,
+				BDBE5FDB203A965400B4E39A /* Beach Day CalculatorTests.xctest */,
+				BDBE5FE6203A965400B4E39A /* Beach Day CalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDBE5FC9203A965300B4E39A /* Beach Day Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				BDBE5FCA203A965300B4E39A /* AppDelegate.swift */,
+				BDBE5FCC203A965300B4E39A /* ViewController.swift */,
+				BDBE5FCE203A965300B4E39A /* Main.storyboard */,
+				BDBE5FD1203A965300B4E39A /* Assets.xcassets */,
+				BDBE5FD3203A965300B4E39A /* LaunchScreen.storyboard */,
+				BDBE5FD6203A965300B4E39A /* Info.plist */,
+			);
+			path = "Beach Day Calculator";
+			sourceTree = "<group>";
+		};
+		BDBE5FDE203A965400B4E39A /* Beach Day CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDBE5FDF203A965400B4E39A /* Beach_Day_CalculatorTests.swift */,
+				BDBE5FE1203A965400B4E39A /* Info.plist */,
+			);
+			path = "Beach Day CalculatorTests";
+			sourceTree = "<group>";
+		};
+		BDBE5FE9203A965400B4E39A /* Beach Day CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDBE5FEA203A965400B4E39A /* Beach_Day_CalculatorUITests.swift */,
+				BDBE5FEC203A965400B4E39A /* Info.plist */,
+			);
+			path = "Beach Day CalculatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDBE5FC6203A965300B4E39A /* Beach Day Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDBE5FEF203A965400B4E39A /* Build configuration list for PBXNativeTarget "Beach Day Calculator" */;
+			buildPhases = (
+				0F450EBB96AD9D9D3497B3ED /* [CP] Check Pods Manifest.lock */,
+				BDBE5FC3203A965300B4E39A /* Sources */,
+				BDBE5FC4203A965300B4E39A /* Frameworks */,
+				BDBE5FC5203A965300B4E39A /* Resources */,
+				A584F280AD555ADE714BA7F5 /* [CP] Embed Pods Frameworks */,
+				81662E8217344C7E76B45284 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Beach Day Calculator";
+			productName = "Beach Day Calculator";
+			productReference = BDBE5FC7203A965300B4E39A /* Beach Day Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDBE5FDA203A965400B4E39A /* Beach Day CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDBE5FF2203A965400B4E39A /* Build configuration list for PBXNativeTarget "Beach Day CalculatorTests" */;
+			buildPhases = (
+				BDBE5FD7203A965400B4E39A /* Sources */,
+				BDBE5FD8203A965400B4E39A /* Frameworks */,
+				BDBE5FD9203A965400B4E39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDBE5FDD203A965400B4E39A /* PBXTargetDependency */,
+			);
+			name = "Beach Day CalculatorTests";
+			productName = "Beach Day CalculatorTests";
+			productReference = BDBE5FDB203A965400B4E39A /* Beach Day CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDBE5FE5203A965400B4E39A /* Beach Day CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDBE5FF5203A965400B4E39A /* Build configuration list for PBXNativeTarget "Beach Day CalculatorUITests" */;
+			buildPhases = (
+				BDBE5FE2203A965400B4E39A /* Sources */,
+				BDBE5FE3203A965400B4E39A /* Frameworks */,
+				BDBE5FE4203A965400B4E39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDBE5FE8203A965400B4E39A /* PBXTargetDependency */,
+			);
+			name = "Beach Day CalculatorUITests";
+			productName = "Beach Day CalculatorUITests";
+			productReference = BDBE5FE6203A965400B4E39A /* Beach Day CalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDBE5FBF203A965300B4E39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Deren Singh";
+				TargetAttributes = {
+					BDBE5FC6203A965300B4E39A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					BDBE5FDA203A965400B4E39A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BDBE5FC6203A965300B4E39A;
+					};
+					BDBE5FE5203A965400B4E39A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BDBE5FC6203A965300B4E39A;
+					};
+				};
+			};
+			buildConfigurationList = BDBE5FC2203A965300B4E39A /* Build configuration list for PBXProject "Beach Day Calculator" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDBE5FBE203A965300B4E39A;
+			productRefGroup = BDBE5FC8203A965300B4E39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDBE5FC6203A965300B4E39A /* Beach Day Calculator */,
+				BDBE5FDA203A965400B4E39A /* Beach Day CalculatorTests */,
+				BDBE5FE5203A965400B4E39A /* Beach Day CalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDBE5FC5203A965300B4E39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDBE5FD5203A965300B4E39A /* LaunchScreen.storyboard in Resources */,
+				BDBE5FD2203A965300B4E39A /* Assets.xcassets in Resources */,
+				BDBE5FF9203A99CA00B4E39A /* Podfile in Resources */,
+				BDBE5FD0203A965300B4E39A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBE5FD9203A965400B4E39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBE5FE4203A965400B4E39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F450EBB96AD9D9D3497B3ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beach Day Calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81662E8217344C7E76B45284 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Beach Day Calculator/Pods-Beach Day Calculator-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beach Day Calculator/Pods-Beach Day Calculator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A584F280AD555ADE714BA7F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beach Day Calculator/Pods-Beach Day Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDBE5FC3203A965300B4E39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDBE5FCD203A965300B4E39A /* ViewController.swift in Sources */,
+				BDBE5FCB203A965300B4E39A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBE5FD7203A965400B4E39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDBE5FE0203A965400B4E39A /* Beach_Day_CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDBE5FE2203A965400B4E39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDBE5FEB203A965400B4E39A /* Beach_Day_CalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDBE5FDD203A965400B4E39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDBE5FC6203A965300B4E39A /* Beach Day Calculator */;
+			targetProxy = BDBE5FDC203A965400B4E39A /* PBXContainerItemProxy */;
+		};
+		BDBE5FE8203A965400B4E39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDBE5FC6203A965300B4E39A /* Beach Day Calculator */;
+			targetProxy = BDBE5FE7203A965400B4E39A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDBE5FCE203A965300B4E39A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDBE5FCF203A965300B4E39A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDBE5FD3203A965300B4E39A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDBE5FD4203A965300B4E39A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDBE5FED203A965400B4E39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDBE5FEE203A965400B4E39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDBE5FF0203A965400B4E39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C27C9DF3FC18AEAF4E636F9 /* Pods-Beach Day Calculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Beach Day Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.derens99.github.io.Beach-Day-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDBE5FF1203A965400B4E39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E8054FAC74333B29AE5818 /* Pods-Beach Day Calculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Beach Day Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.derens99.github.io.Beach-Day-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDBE5FF3203A965400B4E39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Beach Day CalculatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.derens99.github.io.Beach-Day-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beach Day Calculator.app/Beach Day Calculator";
+			};
+			name = Debug;
+		};
+		BDBE5FF4203A965400B4E39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Beach Day CalculatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.derens99.github.io.Beach-Day-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beach Day Calculator.app/Beach Day Calculator";
+			};
+			name = Release;
+		};
+		BDBE5FF6203A965400B4E39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Beach Day CalculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.derens99.github.io.Beach-Day-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Beach Day Calculator";
+			};
+			name = Debug;
+		};
+		BDBE5FF7203A965400B4E39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Beach Day CalculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.derens99.github.io.Beach-Day-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Beach Day Calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDBE5FC2203A965300B4E39A /* Build configuration list for PBXProject "Beach Day Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDBE5FED203A965400B4E39A /* Debug */,
+				BDBE5FEE203A965400B4E39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDBE5FEF203A965400B4E39A /* Build configuration list for PBXNativeTarget "Beach Day Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDBE5FF0203A965400B4E39A /* Debug */,
+				BDBE5FF1203A965400B4E39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDBE5FF2203A965400B4E39A /* Build configuration list for PBXNativeTarget "Beach Day CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDBE5FF3203A965400B4E39A /* Debug */,
+				BDBE5FF4203A965400B4E39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDBE5FF5203A965400B4E39A /* Build configuration list for PBXNativeTarget "Beach Day CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDBE5FF6203A965400B4E39A /* Debug */,
+				BDBE5FF7203A965400B4E39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDBE5FBF203A965300B4E39A /* Project object */;
+}
