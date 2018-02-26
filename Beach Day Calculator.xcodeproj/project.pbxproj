@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5787A0AB47A0C4EC9AB3331E /* libPods-Beach Day Calculator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 244BAC7165C7AA07578B8B3B /* libPods-Beach Day Calculator.a */; };
+		BD8688132042191700E3A39C /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8688122042191700E3A39C /* Foundation.swift */; };
+		BD86881520421AFE00E3A39C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD86881420421AFE00E3A39C /* APIClient.swift */; };
+		BD8688172042211900E3A39C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8688162042211900E3A39C /* Endpoint.swift */; };
+		BD86881920436F4C00E3A39C /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD86881820436F4C00E3A39C /* WeatherAPIClient.swift */; };
 		BDBE5FCB203A965300B4E39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE5FCA203A965300B4E39A /* AppDelegate.swift */; };
 		BDBE5FCD203A965300B4E39A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE5FCC203A965300B4E39A /* ViewController.swift */; };
 		BDBE5FD0203A965300B4E39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDBE5FCE203A965300B4E39A /* Main.storyboard */; };
@@ -39,6 +43,10 @@
 		244BAC7165C7AA07578B8B3B /* libPods-Beach Day Calculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Beach Day Calculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E8054FAC74333B29AE5818 /* Pods-Beach Day Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beach Day Calculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beach Day Calculator/Pods-Beach Day Calculator.release.xcconfig"; sourceTree = "<group>"; };
 		8C27C9DF3FC18AEAF4E636F9 /* Pods-Beach Day Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beach Day Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beach Day Calculator/Pods-Beach Day Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		BD8688122042191700E3A39C /* Foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		BD86881420421AFE00E3A39C /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		BD8688162042211900E3A39C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		BD86881820436F4C00E3A39C /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
 		BDBE5FC7203A965300B4E39A /* Beach Day Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beach Day Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDBE5FCA203A965300B4E39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDBE5FCC203A965300B4E39A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +106,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD86881A2043948700E3A39C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BD86881820436F4C00E3A39C /* WeatherAPIClient.swift */,
+				BD86881420421AFE00E3A39C /* APIClient.swift */,
+				BD8688122042191700E3A39C /* Foundation.swift */,
+				BD8688162042211900E3A39C /* Endpoint.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BD86881B2043949E00E3A39C /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BD86881C204394A800E3A39C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BDBE5FD3203A965300B4E39A /* LaunchScreen.storyboard */,
+				BDBE5FCE203A965300B4E39A /* Main.storyboard */,
+				BDBE5FCA203A965300B4E39A /* AppDelegate.swift */,
+				BDBE5FD1203A965300B4E39A /* Assets.xcassets */,
+				BDBE5FCC203A965300B4E39A /* ViewController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BDBE5FBE203A965300B4E39A = {
 			isa = PBXGroup;
 			children = (
@@ -124,12 +162,10 @@
 		BDBE5FC9203A965300B4E39A /* Beach Day Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				BDBE5FCA203A965300B4E39A /* AppDelegate.swift */,
-				BDBE5FCC203A965300B4E39A /* ViewController.swift */,
-				BDBE5FCE203A965300B4E39A /* Main.storyboard */,
-				BDBE5FD1203A965300B4E39A /* Assets.xcassets */,
-				BDBE5FD3203A965300B4E39A /* LaunchScreen.storyboard */,
 				BDBE5FD6203A965300B4E39A /* Info.plist */,
+				BD86881C204394A800E3A39C /* Models */,
+				BD86881B2043949E00E3A39C /* VC */,
+				BD86881A2043948700E3A39C /* API */,
 			);
 			path = "Beach Day Calculator";
 			sourceTree = "<group>";
@@ -346,8 +382,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD86881920436F4C00E3A39C /* WeatherAPIClient.swift in Sources */,
+				BD8688132042191700E3A39C /* Foundation.swift in Sources */,
 				BDBE5FCD203A965300B4E39A /* ViewController.swift in Sources */,
 				BDBE5FCB203A965300B4E39A /* AppDelegate.swift in Sources */,
+				BD86881520421AFE00E3A39C /* APIClient.swift in Sources */,
+				BD8688172042211900E3A39C /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
