@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-class ViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelegate,GMSAutocompleteViewControllerDelegate{
+class ViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelegate, GMSAutocompleteViewControllerDelegate{
     
     var selectedLocation: GMSPlace!
     
@@ -46,7 +46,20 @@ class ViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelegate,
         selectedLocation = place
         searchBar.text = selectedLocation.name
         
+        print(selectedLocation.coordinate.latitude)
+        print(selectedLocation.coordinate.longitude)
         
+        let weatherApi = WeatherApiClient()
+        let weatherEndpoint = WeatherEndpoint.tenDayForecast(latitude: selectedLocation.coordinate.latitude, longitude: selectedLocation.coordinate.longitude)
+        weatherApi.weather(with: weatherEndpoint) { (either) in
+            switch either{
+            case .value(let forecastText):
+                print(forecastText)
+            case .error(let error):
+                print(error)
+            }
+        }
+        print(selectedLocation.name)
         self.dismiss(animated: true, completion: nil) // dismiss after select place
     }
     
@@ -55,7 +68,7 @@ class ViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelegate,
     }
     
     func wasCancelled(_ viewController: GMSAutocompleteViewController) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: false, completion: nil)
     }
     
     

@@ -19,7 +19,7 @@ extension Endpoint{
         var component = URLComponents(string: baseUrl)
         component?.path = path
         component?.queryItems = queryItems
-        
+        print(component?.url)
         return component!
     }
     
@@ -30,7 +30,9 @@ extension Endpoint{
 
 enum WeatherEndpoint: Endpoint{
     
-    case tenDayForecast(city: String, state: String)
+    case tenDayForecast(latitude: Double, longitude: Double)
+    
+    case forecast(latitude: Double, longitude: Double)
     
     var baseUrl: String{
         return "https://api.wunderground.com"
@@ -38,17 +40,15 @@ enum WeatherEndpoint: Endpoint{
     
     var path: String{
         switch self{
-        case .tenDayForecast(let city, let state):
-            return "/api/877210496011db6b/forecast10day/q/\(state)/\(city).json"
-        case .conditions(let city, let state):
-            return "/api/877210496011db6b/conditions/q/\(state)/\(city).json"
+        case .tenDayForecast(let lat, let long):
+            return "/api/877210496011db6b/forecast10day/q/\(lat),\(long).json"
+        case .forecast(let lat, let long):
+            return "/api/877210496011db6b/forecast/q/\(lat),\(long).json"
         }
-        
-        
-        
     }
     
     var queryItems: [URLQueryItem]{
         return []
     }
+    
 }
