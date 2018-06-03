@@ -13,7 +13,9 @@ import GooglePlaces
 class ViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelegate, GMSAutocompleteViewControllerDelegate{
     
     var selectedLocation: GMSPlace!
+    var forecastData = [Weather]()
     
+    @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
@@ -30,11 +32,9 @@ class ViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelegate,
         
         self.present(autoCompleteController, animated: true, completion: nil)
         print("Search bar was clicked")
-    }
-    
-    func getWeather(){
         
     }
+    
     
     func calculateBeachDay() -> Float{
         return 0.1
@@ -49,18 +49,21 @@ class ViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelegate,
         print(selectedLocation.coordinate.latitude)
         print(selectedLocation.coordinate.longitude)
         
-        let weatherApi = WeatherApiClient()
-        let weatherEndpoint = WeatherEndpoint.tenDayForecast(latitude: selectedLocation.coordinate.latitude, longitude: selectedLocation.coordinate.longitude)
-        weatherApi.weather(with: weatherEndpoint) { (either) in
-            switch either{
-            case .value(let forecastText):
-                print(forecastText)
-            case .error(let error):
-                print(error)
-            }
-        }
         print(selectedLocation.name)
+        
+        
+        Weather.hourlyForecast(withLocation: self.selectedLocation.coordinate, completion: { (results:[Weather]?) in
+            if let weatherData = results{
+                self.forecastData = weatherData
+                print("Weather data")
+                print(weatherData.count)
+                
+            }
+            print(results?.count)
+        })
+        
         self.dismiss(animated: true, completion: nil) // dismiss after select place
+        self.tempLabel.text = forecastData[0].summary
     }
     
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
