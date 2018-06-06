@@ -49,23 +49,32 @@
                                 <rect key="contentStretch" x="0.20000000000000001" y="0.0" width="1" height="1"/>
                             </tableViewCell>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbF-a5-P1O">
-                                <rect key="frame" x="1" y="156" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="201" width="375" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.62745098040000002" green="0.98823529409999999" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search For Town" id="XLP-bW-pcL"/>
                     <connections>
                         <outlet property="searchBar" destination="sa0-it-EWm" id="L55-Xd-vFY"/>
+                        <outlet property="searchDisplayController" destination="hRq-ca-8xu" id="2Mp-ww-Z12"/>
                         <outlet property="tempLabel" destination="tbF-a5-P1O" id="a95-tA-QaX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="hRq-ca-8xu">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="RW6-hW-Pn7"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="897-t7-a75"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="o3h-cZ-Ris"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="FlO-k2-Vsq"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-434.39999999999998" y="526.6866566716642"/>
         </scene>

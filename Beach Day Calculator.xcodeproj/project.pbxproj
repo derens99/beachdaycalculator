@@ -123,7 +123,6 @@
 		BDBE5FBE203A965300B4E39A = {
 			isa = PBXGroup;
 			children = (
-				BDBE5FF8203A99CA00B4E39A /* Podfile */,
 				BDBE5FC9203A965300B4E39A /* Beach Day Calculator */,
 				BDBE5FDE203A965400B4E39A /* Beach Day CalculatorTests */,
 				BDBE5FE9203A965400B4E39A /* Beach Day CalculatorUITests */,
@@ -146,6 +145,7 @@
 		BDBE5FC9203A965300B4E39A /* Beach Day Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				BDBE5FF8203A99CA00B4E39A /* Podfile */,
 				BDBE5FD6203A965300B4E39A /* Info.plist */,
 				BD86881C204394A800E3A39C /* Models */,
 				BD86881A2043948700E3A39C /* API */,

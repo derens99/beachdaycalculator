@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import GoogleMaps
 import GooglePlaces
 
-class ViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelegate, GMSAutocompleteViewControllerDelegate{
+class ViewController: UIViewController, UISearchBarDelegate, GMSAutocompleteViewControllerDelegate{
     
     var selectedLocation: GMSPlace!
     var forecastData = [Weather]()
@@ -29,41 +28,36 @@ class ViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelegate,
         
         let autoCompleteController = GMSAutocompleteViewController()
         autoCompleteController.delegate = self
-        
         self.present(autoCompleteController, animated: true, completion: nil)
-        print("Search bar was clicked")
-        
     }
     
-    
-    func calculateBeachDay() -> Float{
-        return 0.1
+    func updateWeather(location: GMSPlace) -> [Weather]{
+        var data = [Weather]()
+        Weather.hourlyForecast(withLocation: location.coordinate, completion: { (results:[Weather]?) in
+            if let weatherData = results {
+                self.forecastData = weatherData
+            }
+            data = results!
+        })
+        return data
     }
-    
     
     //Autocomplete Deletegate
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
         selectedLocation = place
         searchBar.text = selectedLocation.name
         
-        print(selectedLocation.coordinate.latitude)
-        print(selectedLocation.coordinate.longitude)
-        
-        print(selectedLocation.name)
-        
-        
-        Weather.hourlyForecast(withLocation: self.selectedLocation.coordinate, completion: { (results:[Weather]?) in
+        //This happens way after everthing else. how do i fix?
+        Weather.hourlyForecast(withLocation: place.coordinate, completion: { (results:[Weather]?) in
             if let weatherData = results{
-                self.forecastData = weatherData
-                print("Weather data")
-                print(weatherData.count)
-                
+                DispatchQueue.main.async {
+                    self.forecastData = weatherData
+                    self.tempLabel.text = self.forecastData[0].summary
+                }
             }
-            print(results?.count)
         })
         
         self.dismiss(animated: true, completion: nil) // dismiss after select place
-        self.tempLabel.text = forecastData[0].summary
     }
     
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
@@ -76,3 +70,4 @@ class ViewController: UIViewController, UISearchBarDelegate, GMSMapViewDelegate,
     
     
 }
+
